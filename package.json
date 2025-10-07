@@ -1,0 +1,26 @@
+{
+  "name": "md-blog",
+  "version": "1.0.0",
+  "description": "A simple Markdown blog that can be deployed to Cloudflare Pages",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "markdown",
+    "blog",
+    "cloudflare",
+    "pages"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "marked": "^4.3.0",
+    "highlight.js": "^11.7.0"
+  },
+  "devDependencies": {
+    "vite": "^4.3.9"
+  }
+}

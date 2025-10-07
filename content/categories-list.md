@@ -1,0 +1,3 @@
+- [技术](categories#技术) (3)
+- [教程](categories#教程) (2)
+- [随笔](categories#随笔) (1)

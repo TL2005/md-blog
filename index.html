@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>帽之岛 | Hat's Land</title>
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <link rel="stylesheet" href="/src/styles/highlight.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/github.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <!-- 移动端侧边抽屉菜单 -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="https://pic2.imgdd.cc/item/68ccf5eafcdff6548302f169.png" alt="帽之岛 | Hat's Land" class="drawer-logo">
+      <button class="close-drawer" id="closeDrawer">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    
+    <!-- 移动端关于博主卡片 -->
+    <div class="mobile-about-author">
+      <img src="https://pic2.imgdd.cc/item/68d2afc2fcdff6548308145d.png" alt="博主头像" class="mobile-author-avatar">
+      <h4 class="mobile-author-name">帽子先生</h4>
+      <p class="mobile-author-bio">热爱技术，喜欢分享。这里记录我的思考与成长。</p>
+      <div class="mobile-social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-weibo"></i></a>
+      </div>
+    </div>
+    
+    <nav class="drawer-nav">
+      <ul>
+        <li><a href="/"><i class="fas fa-home"></i> 首页</a></li>
+        <li><a href="/archives"><i class="fas fa-archive"></i> 归档</a></li>
+        <li><a href="/categories"><i class="fas fa-folder"></i> 分类</a></li>
+        <li><a href="/tags"><i class="fas fa-tags"></i> 标签</a></li>
+        <li><a href="/about"><i class="fas fa-user"></i> 关于</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+  <!-- 遮罩层 -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <header>
+    <div class="container site-header">
+      <div class="site-branding">
+        <a href="/" class="site-logo-link">
+          <img src="https://pic2.imgdd.cc/item/68ccf5eafcdff6548302f169.png" alt="帽之岛 | Hat's Land" class="site-logo">
+        </a>
+      </div>
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="打开菜单">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="/"><i class="fas fa-home"></i> 首页</a></li>
+          <li><a href="/archives"><i class="fas fa-archive"></i> 归档</a></li>
+          <li><a href="/categories"><i class="fas fa-folder"></i> 分类</a></li>
+          <li><a href="/tags"><i class="fas fa-tags"></i> 标签</a></li>
+          <li><a href="/about"><i class="fas fa-user"></i> 关于</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container main-container">
+      <div class="content-area">
+        <div id="content"></div>
+      </div>
+      
+      <div class="sidebar">
+        <!-- 关于博主 -->
+        <div class="widget">
+          <h3 class="widget-title">关于博主</h3>
+          <div class="widget-content">
+            <div class="about-author">
+              <img src="https://pic2.imgdd.cc/item/68d2afc2fcdff6548308145d.png" alt="博主头像" class="author-avatar">
+              <h4 class="author-name">帽子先生</h4>
+              <p class="author-bio">热爱技术，喜欢分享。这里记录我的思考与成长。</p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-weibo"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 分类 -->
+        <div class="widget">
+          <h3 class="widget-title">分类</h3>
+          <div class="widget-content" id="categories-list">
+            <!-- 分类列表将通过JavaScript动态加载 -->
+          </div>
+        </div>
+        
+        <!-- 标签云 -->
+        <div class="widget">
+          <h3 class="widget-title">标签云</h3>
+          <div class="widget-content tag-cloud" id="tags-cloud">
+            <!-- 标签云将通过JavaScript动态加载 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>帽之岛</h3>
+          <p>一个简约而不简单的博客，记录技术与生活的点滴。</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2023 帽之岛 | Hat's Land. 使用 Markdown 和 Vite 构建.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
